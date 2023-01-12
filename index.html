@@ -34,12 +34,12 @@
 		    </div>
         </section>
 		<section class="header">
-		    <div class="container">
+		    <div class="container" id="d-flex">
 			    <nav class="topnav">
 					<div class="logo">
 					    <p>MAMBA</p>
 					</div>
-						<ul>
+						<ul id="navList">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#service">Services</a></li>
@@ -48,9 +48,29 @@
 							<li><a href="#dropdown">Drop Down</a></li>
 						    <li><a href="#contact">Contact</a></li>
 						</ul>
-					<iconify-icon icon="charm:menu-hamburger"></iconify-icon>							
+						<iconify-icon onClick="myFunction()" icon="charm:menu-hamburger"></iconify-icon>
+												
 				</nav>
+				
 			</div>
+			<script>
+			  function myFunction(){
+			  var navList = document.getElementById("navList");
+			  if(navList.style.display==="" || navList.style.display==="none"){
+				 navList.style.display="block";
+			  }
+			  else if(navList.style.display==="block"){
+				 navList.style.display="block";
+			  }	  
+			  else{
+				 navList.style.display="block";
+			  }
+			 
+		   }
+		   
+		  
+			
+			</script>
 		</section>
         <section class="slide" id="home">
 		    <div class="container">
@@ -436,6 +456,8 @@
 		
 		</div>
 		</section>
+		
+		
 		<section class="faq">
 		    <div class="container">
 		        <div class="port">
